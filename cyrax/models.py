@@ -166,7 +166,7 @@ class Post(Entry):
 
     def get_relative_url(self):
         date = self.date.strftime('%Y/%m/%d')
-        url = posixpath.join(self.base, date, self.slug) + '/'
+        url = posixpath.join(self.base, self.slug) + '/'
         return url
 
     @staticmethod
